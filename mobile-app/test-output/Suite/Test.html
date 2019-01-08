@@ -1,0 +1,472 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 02 15:16:53 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>54 seconds (54823 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.test.mobile_app.mobile_app.App.beforeClass()'><b>beforeClass</b><br>Test class: org.test.mobile_app.mobile_app.App</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-88C78MG&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.test.mobile_app.mobile_app.App.beforeClass(App.java:27)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 33 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1365767549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1365767549'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-88C78MG&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.test.mobile_app.mobile_app.App.beforeClass(App.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 33 more
+</pre></div></td>
+<td>54</td>
+<td>org.test.mobile_app.mobile_app.App@6b9651f3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.test.mobile_app.mobile_app.App.afterClass()'><b>afterClass</b><br>Test class: org.test.mobile_app.mobile_app.App</td>
+<td></td>
+<td>0</td>
+<td>org.test.mobile_app.mobile_app.App@6b9651f3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.test.mobile_app.mobile_app.App.verifySearchButton()'><b>verifySearchButton</b><br>Test class: org.test.mobile_app.mobile_app.App</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-88C78MG&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.test.mobile_app.mobile_app.App.beforeClass(App.java:27)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 33 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1481818223", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1481818223'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;DESKTOP-88C78MG&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at org.test.mobile_app.mobile_app.App.beforeClass(App.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;zh-TW&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pt-BR&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;da&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;tr&quot;]},{&quot;name&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;description&quot;:&quot;McAfee® WebAdvisor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;nl&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:&quot;51.0&quot;,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;signedState&quot;:2,&quot;seen&quot;:false,&quot;dependencies&quot;:[],&quot;hasEmbeddedWebExtension&quot;:false,&quot;userPermissions&quot;:{&quot;permissions&quot;:[&quot;tabs&quot;,&quot;downloads&quot;,&quot;nativeMessaging&quot;,&quot;webRequest&quot;,&quot;storage&quot;],&quot;origins&quot;:[&quot;&lt;all_urls&gt;&quot;,&quot;http://*/*&quot;,&quot;https://*/*&quot;]},&quot;icons&quot;:{&quot;128&quot;:&quot;images/webadvisor.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:false,&quot;installTelemetryInfo&quot;:{&quot;source&quot;:&quot;winreg-app-global&quot;,&quot;method&quot;:&quot;sideload&quot;},&quot;location&quot;:&quot;winreg-app-global&quot;}
+1546463828067	addons.xpi-utils	DEBUG	Updating add-on states
+1546463828145	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1546463828211	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 35.0.0
+1546463828212	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 3.0.0
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1546463828225	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1546463828225	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1546463828225	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1546463828227	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1546463828228	addons.manager	DEBUG	Starting provider: GMPProvider
+1546463828277	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1546463828278	addons.manager	DEBUG	Starting provider: PluginProvider
+1546463828278	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1546463828278	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1546463828298	addons.manager	DEBUG	Completed startup sequence
+1546463840074	addons.repository	DEBUG	No addons.json found.
+1546463849491	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+[Parent 16636, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37844, Chrome_Ch[Parent 16636, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188
+1546463851110	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\swapn\AppData\Local\Temp\anonymous7920620267910379716webdriver-profile\extensions\webdriver-staging
+1546463851112	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1546463851113	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1546463851114	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1546463851117	addons.xpi	DEBUG	Existing add-on {4ED1F68A-5463-4931-9384-8FFF5ED91D92} in winreg-app-global
+1546463851117	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 2600: TypeError: addon is null
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 33 more
+</pre></div></td>
+<td>0</td>
+<td>org.test.mobile_app.mobile_app.App@6b9651f3</td></tr>
+</table><p>
+</body>
+</html>
